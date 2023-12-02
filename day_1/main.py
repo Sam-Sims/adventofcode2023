@@ -5,7 +5,7 @@ def main():
     with open("input.txt", "r") as f:
         input_data = f.read().splitlines()
 
-    Part 1
+    # Part 1
     calibration_numbers = []
     for row in input_data:
         number = []
@@ -31,7 +31,6 @@ def main():
         # Replace the numbers with their strings
         for key, value in numbers_map.items():
             row = row.replace(key, str(value))
-        print(row)
         # Repeat the same process as in part 1
         number = []
         for char in row:
